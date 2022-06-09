@@ -50,6 +50,104 @@
         <!-- ./container -->
     </div>
     <!-- /.content_top -->
+
+    <div class="content_bottom">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col">
+
+                    <div class="actions d-flex align-items-center">
+                        <div class="action_image d-flex align-items-center">
+                            <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+                        </div>
+                        <!-- /.action_image -->
+                        <div class="action_text d-flex align-items-center text-uppercase">
+                            Digital Comics
+                        </div>
+                        <!-- /.action_text -->
+
+                    </div>
+                    <!-- /actions -->
+
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <div class="actions d-flex align-items-center">
+                        <div class="action_image d-flex align-items-center">
+                            <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+                        </div>
+                        <!-- /.action_image -->
+                        <div class="action_text d-flex align-items-center text-uppercase">
+                            Dc merchandise
+                        </div>
+                        <!-- /.action_text -->
+                    </div>
+                    <!-- /actions -->
+
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <div class="actions d-flex align-items-center">
+                        <div class="action_image d-flex align-items-center">
+                            <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+                        </div>
+                        <!-- /.action_image -->
+                        <div class="action_text d-flex align-items-center text-uppercase">
+                            Subscription
+                        </div>
+                        <!-- /.action_text -->
+                    </div>
+                    <!-- /actions -->
+
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <div class="actions d-flex align-items-center">
+                        <div class="action_image d-flex align-items-center">
+                            <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+                        </div>
+                        <!-- /.action_image -->
+                        <div class="action_text d-flex align-items-center text-uppercase">
+                            Comic shop locator
+                        </div>
+                        <!-- /.action_text -->
+                    </div>
+                    <!-- /actions -->
+
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+
+                    <div class="actions d-flex align-items-center">
+                        <div class="action_image d-flex align-items-center">
+                            <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="">
+                        </div>
+                        <!-- /.action_image -->
+                        <div class="action_text d-flex align-items-center text-uppercase">
+                            Dc power visa
+                        </div>
+                        <!-- /.action_text -->
+                    </div>
+                    <!-- /actions -->
+
+                </div>
+                <!-- /.col -->
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content_bottom -->
     
 
 @endsection

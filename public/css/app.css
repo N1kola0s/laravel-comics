@@ -10228,6 +10228,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+img {
+  width: 100%;
+}
+
 main .jumbotron {
   background-image: url("../img/jumbotron.jpg");
   height: 315px;
