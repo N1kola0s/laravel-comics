@@ -1,1 +1,54 @@
 @use 'bootstrap';
+main {
+    .jumbotron {
+        background-image: url('../img/jumbotron.jpg');
+        height: 315px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content_top {
+        background-color: black;
+        padding: 2.5rem 0;
+        height: calc(100% - 125px);
+        .container {
+            position: relative;
+            .text {
+                padding: 0.5rem 1.5rem;
+                font-size: 1.5rem;
+                width: fit-content;
+                background-color: #0282F9;
+                position: absolute;
+                top: -70px;
+                left: 0px;
+            }
+            .card {
+                padding: 1rem 0rem;
+                color: #959595;
+                text-transform: uppercase;
+                background-color: black;
+                .card-img-top {
+                    object-position: top;
+                    aspect-ratio: 1/1;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                .card-body {
+                    padding: 1rem 0rem;
+                }
+                h6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .content_bottom {
+        padding: 2.5rem 0;
+        color: white;
+        background-color: #0282F9;
+        .action_image {
+            height: 48px;
+            width: 37px;
+            margin: 0 2.31rem;
+        }
+    }
+}
