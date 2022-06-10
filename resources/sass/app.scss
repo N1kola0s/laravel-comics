@@ -92,3 +92,21 @@ main {
         }
     }
 }
+
+
+/* FOOTER */
+
+#site_footer {
+    h3 {
+        font-size: 20px;
+    }
+    .footer_top {
+        background-image: url('../img/footer-bg.jpg');
+        height: 312px;
+        background-size: cover;
+    }
+    .footer_bottom {
+        height: 87px;
+        background-color: $dc-footer-bg;
+    }
+}

@@ -10301,3 +10301,17 @@ main .content_bottom .action_image {
   width: 37px;
   margin: 0 2.31rem;
 }
+
+/* FOOTER */
+#site_footer h3 {
+  font-size: 20px;
+}
+#site_footer .footer_top {
+  background-image: url("../img/footer-bg.jpg");
+  height: 312px;
+  background-size: cover;
+}
+#site_footer .footer_bottom {
+  height: 87px;
+  background-color: #303030;
+}
