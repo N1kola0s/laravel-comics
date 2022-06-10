@@ -17,23 +17,25 @@
             </div>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
-                @foreach ($comics as $comic)
+
+                @foreach ($comics as $index => $comic)
 
                 <div class="col">
-                    <div class="card py-3 border-0">
-                        <img class="card-img-top" src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                    <a href="{{route('comics.show', $index)}}">
+                        <div class="card py-3 border-0">
+                            <img class="card-img-top" src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
 
-                        <div class="card-body">
-                            <h6 class="card-title text-left">{{$comic['series']}}</h6>
+                            <div class="card-body">
+                                <h6 class="card-title text-left">{{$comic['series']}}</h6>
 
+                            </div>
+                            <!-- /.card-body -->
                         </div>
-                        <!-- /.card-body -->
-
-                    </div>
-                    <!-- /.card -->
-
+                        <!-- /.card -->
+                    </a>
                 </div>
                 <!-- ./col -->
+                
                 @endforeach
 
             </div>
