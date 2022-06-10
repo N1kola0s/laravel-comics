@@ -100,10 +100,25 @@ main {
     h3 {
         font-size: 20px;
     }
+    p {
+        font-size: 14px;
+        color: $dc-text-grey;
+        a {
+            text-decoration-line: none;
+        }
+    }
     .footer_top {
         background-image: url('../img/footer-bg.jpg');
-        height: 312px;
+        /* height: 480px; */
         background-size: cover;
+        ul {
+            list-style: none;
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: $dc-text-grey;
+            }
+        }
     }
     .footer_bottom {
         height: 87px;
