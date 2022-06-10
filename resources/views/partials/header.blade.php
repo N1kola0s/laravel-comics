@@ -1,47 +1,52 @@
-<header>
+<header id="site_header">
+
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-          <div class="container">
+
+        <div class="container">
+
             <a class="navbar-brand" href="{{route('home')}}">
                 @include('partials.logo')
             </a>
+
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{route('home')}}">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link {{Route::currentRouteName() === 'home' ? 'selected' : ''}}" href="{{route('home')}}">Home <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('characters')}}">Characters</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'charachters' ? 'selected' : ''}}" href="{{route('characters')}}">Characters</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('comics')}}">Comics</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'selected' : ''}}" href="{{route('comics')}}">Comics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('movies')}}">Movies</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'movies' ? 'selected' : ''}}" href="{{route('movies')}}">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('tv')}}">Tv</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'tv' ? 'selected' : ''}}" href="{{route('tv')}}">Tv</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('games')}}">Games</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'games' ? 'selected' : ''}}" href="{{route('games')}}">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('collectibles')}}">collectibles</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'collectibles' ? 'selected' : ''}}" href="{{route('collectibles')}}">collectibles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('videos')}}">videos</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'videos' ? 'selected' : ''}}" href="{{route('videos')}}">videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('fans')}}">fans</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'selected' : ''}}" href="{{route('fans')}}">fans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('news')}}">news</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'news' ? 'selected' : ''}}" href="{{route('news')}}">news</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('shop')}}">shop</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'selected' : ''}}" href="{{route('shop')}}">shop</a>
                     </li>
                     
                 </ul>
@@ -50,7 +55,12 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-      </div>
+
+        </div>
+        <!-- /.container -->
+
     </nav>
+    <!-- /.navbar -->
     
 </header>
+<!-- /#site_header -->

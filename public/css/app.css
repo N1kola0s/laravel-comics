@@ -10233,6 +10233,17 @@ img {
   width: 100%;
 }
 
+/* HEADER */
+header nav ul li a {
+  text-transform: uppercase;
+  color: #464646;
+  border-bottom: 4px solid transparent;
+}
+header nav ul li a.selected, header nav ul li a:hover {
+  border-bottom: 4px solid #0282F9;
+  color: #0282F9 !important;
+}
+
 /* MAIN */
 main .jumbotron {
   background-image: url("../img/jumbotron.jpg");
