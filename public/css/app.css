@@ -10228,10 +10228,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* common rules */
 img {
   width: 100%;
 }
 
+/* MAIN */
 main .jumbotron {
   background-image: url("../img/jumbotron.jpg");
   height: 315px;
@@ -10239,7 +10241,7 @@ main .jumbotron {
   background-repeat: no-repeat;
 }
 main .content_top {
-  background-color: black;
+  background-color: #1C1C1C;
   padding: 2.5rem 0;
   height: calc(100% - 125px);
 }
@@ -10261,7 +10263,7 @@ main .content_top .container .card {
   padding: 1rem 0rem;
   color: #959595;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #1C1C1C;
 }
 main .content_top .container .card .card-img-top {
   -o-object-position: top;
@@ -10272,6 +10274,7 @@ main .content_top .container .card .card-img-top {
      object-fit: cover;
 }
 main .content_top .container .card .card-body {
+  color: #FFFFF2;
   padding: 1rem 0rem;
 }
 main .content_top .container .card h6 {

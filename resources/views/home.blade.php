@@ -16,11 +16,11 @@
                 current series
             </div>
 
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
                 @foreach ($comics as $comic)
 
-                <div class="col-2">
-                    <div class="card py-3">
+                <div class="col">
+                    <div class="card py-3 border-0">
                         <img class="card-img-top" src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
 
                         <div class="card-body">

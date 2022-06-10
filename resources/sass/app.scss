@@ -1,7 +1,20 @@
 @use 'bootstrap';
+//colors
+$dc-primary: #0282F9;
+$dc-banner-bg: #1C1C1C;
+$dc-footer-bg: #303030;
+$dc-text-dark: #464646;
+$dc-text-white: #FFFFF2;
+$dc-text-grey: #797777;
+
+/* common rules */
+
 img {
     width: 100%;
 }
+
+
+/* MAIN */
 
 main {
     .jumbotron {
@@ -11,7 +24,7 @@ main {
         background-repeat: no-repeat;
     }
     .content_top {
-        background-color: black;
+        background-color: $dc-banner-bg;
         padding: 2.5rem 0;
         height: calc(100% - 125px);
         .container {
@@ -20,7 +33,7 @@ main {
                 padding: 0.5rem 1.5rem;
                 font-size: 1.5rem;
                 width: fit-content;
-                background-color: #0282F9;
+                background-color: $dc-primary;
                 position: absolute;
                 top: -70px;
                 left: 0px;
@@ -29,7 +42,7 @@ main {
                 padding: 1rem 0rem;
                 color: #959595;
                 text-transform: uppercase;
-                background-color: black;
+                background-color: $dc-banner-bg;
                 .card-img-top {
                     object-position: top;
                     aspect-ratio: 1/1;
@@ -37,6 +50,7 @@ main {
                     object-fit: cover;
                 }
                 .card-body {
+                    color: $dc-text-white;
                     padding: 1rem 0rem;
                 }
                 h6 {
