@@ -27,7 +27,6 @@
 
                             <div class="card-body">
                                 <h6 class="card-title text-left">{{$comic['series']}}</h6>
-
                             </div>
                             <!-- /.card-body -->
                         </div>

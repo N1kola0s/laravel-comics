@@ -29,6 +29,11 @@ img {
     width: 100%;
 }
 
+.container_sm {
+    width: 1000px;
+    margin: auto;
+}
+
 
 /* HEADER */
 
@@ -151,6 +156,36 @@ main {
             width: 37px;
             margin: 0 2.31rem;
         }
+    }
+}
+
+
+/* SINGLE COMIC PAGE */
+
+.hero {
+    .hero_bottom {
+        height: 60px;
+        background-color: $dc-primary;
+        .container_sm {
+            position: relative;
+            .thumb {
+                position: absolute;
+                width: 153px;
+                height: 232px;
+                left: 0;
+                bottom: -45px;
+            }
+        }
+    }
+}
+
+.comic_info {
+    .img_adv {
+        height: 203px;
+    }
+    .sale_box {
+        background-color: #55BA59;
+        height: 36px;
     }
 }
 
