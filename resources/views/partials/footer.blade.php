@@ -230,7 +230,59 @@
     </div>
     <!-- /.footer_top -->
 
-    <div class="footer_bottom">
+    <div class="footer_bottom d-flex justify-content-center">
+
+        <div class="container">
+
+            <div class="row align-items-center h-100">
+
+                <div class="col-6">
+                    <a href="#" class="btn btn-outline-primary rounded-0 border-3 text-uppercase text-white">
+                        sign-up now!
+                    </a>
+                </div>
+                <!-- /.col -->
+
+                <div class="col-6">
+                    <div class=" contacts d-flex justify-content-end align-items-center">
+                        <h3 class="text-uppercase px-4 my-0">
+                            follow us
+                        </h3>
+                        <div class="social_media d-flex d-flex align-items-center">
+
+                            <da href="#"  class="channel facebook">
+                                <img src="../img/footer-facebook.png" alt="facebook">
+                            </da>
+
+                            <a href="#" class="channel twitter">
+                                <img src="../img/footer-twitter.png" alt="twitter">
+                            </a>
+
+                            <a href="#" class="channel youtube">
+                                <img src="../img/footer-youtube.png" alt="youtube">
+                            </a>
+
+                            <a href="#" class="channel pinterest">
+                                <img src="../img/footer-pinterest.png" alt="pinterest">
+                            </a>
+
+                            <a href="#" class="channel periscope">
+                                <img src="../img/footer-periscope.png" alt="periscope">
+                            </a>
+
+                        </div>
+                        <!-- /.social_media -->
+
+                    </div>
+                    <!-- /.contacts -->
+
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
 
     </div>
     <!-- /.footer_bottom -->

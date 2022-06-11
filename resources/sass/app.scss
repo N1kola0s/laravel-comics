@@ -1,4 +1,9 @@
 @use 'bootstrap';
+// Font-Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 
 /* Google font arial */
 
@@ -28,24 +33,63 @@ img {
 /* HEADER */
 
 header {
+    .banner_top {
+        height: 20px;
+        background-color: $dc-primary;
+        font-size: 10px;
+        sup {
+            top: -0.3em;
+        }
+    }
     nav {
         font-size: 13px;
         font-weight: 600;
-        .logo {
-            height: 60px;
-            aspect-ratio: 1/1;
+        form {
+            border-bottom: 3px solid $dc-primary;
+            width: 150px;
+            input {
+                border: 0!important;
+                background-color: transparent!important;
+                text-align: right!important;
+                border-radius: 0!important;
+                transition: 0!important;
+                &:focus {
+                    box-shadow: none!important;
+                }
+            }
+            button {
+                background-color: transparent;
+                border: 0!important;
+                /* padding-left: 0!important;
+                padding-right: 0!important; */
+                padding: 0.5rem 0 0 0!important;
+                i {
+                    color: $dc-banner-bg;
+                }
+            }
         }
-        ul {
-            li {
-                a {
-                    text-transform: uppercase;
-                    color: $dc-text-dark;
-                    border-bottom: 4px solid transparent;
-                    &.selected,
-                    &:hover {
-                        border-bottom: 4px solid $dc-primary;
-                        color: $dc-primary!important;
-                    }
+    }
+    .logo {
+        height: 60px;
+        aspect-ratio: 1/1;
+    }
+    ul {
+        li {
+            a {
+                text-transform: uppercase;
+                color: $dc-text-dark;
+                border-bottom: 4px solid transparent;
+                &.selected,
+                &:hover {
+                    border-bottom: 4px solid $dc-primary;
+                    color: $dc-primary!important;
+                }
+            }
+            .menu_arrow_down {
+                &.selected,
+                &:hover {
+                    border-bottom: 0;
+                    color: transparent;
                 }
             }
         }
@@ -140,5 +184,17 @@ main {
     .footer_bottom {
         height: 87px;
         background-color: $dc-footer-bg;
+        color: $dc-primary;
+        font-size: 18px;
+        .contacts {
+            h3 {
+                font-weight: 600;
+                letter-spacing: 0.3px;
+            }
+        }
+        .channel {
+            padding: 0 8px;
+            margin-left: 10px;
+        }
     }
 }

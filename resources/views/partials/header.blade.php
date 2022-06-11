@@ -1,5 +1,17 @@
 <header id="site_header">
 
+    
+
+        <div class="banner_top">
+            <div class="container text-white d-flex justify-content-end align-items-center h-100">
+                <span class="ps-3">DC POWER<sup>SM</sup> VISA&reg; </span>
+                <span class="ps-3">ADDITIONAL DC SITES <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+        </div>
+        
+    
+
+   
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
 
         <div class="container">
@@ -45,14 +57,15 @@
                     <li class="nav-item">
                         <a class="nav-link {{Route::currentRouteName() === 'news' ? 'selected' : ''}}" href="{{route('news')}}">news</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'selected' : ''}}" href="{{route('shop')}}">shop</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'selected' : ''}}" href="{{route('shop')}}">shop</a> 
+                        <a href="#" class="menu_arrow_down"><i class="fa-solid fa-caret-down text-primary"></i></a>
                     </li>
                     
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control pe-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
 
