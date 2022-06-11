@@ -1,4 +1,8 @@
 @use 'bootstrap';
+
+/* Google font arial */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 //colors
 $dc-primary: #0282F9;
 $dc-banner-bg: #1C1C1C;
@@ -6,6 +10,13 @@ $dc-footer-bg: #303030;
 $dc-text-dark: #464646;
 $dc-text-white: #FFFFF2;
 $dc-text-grey: #797777;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 
 /* common rules */
 
@@ -18,6 +29,12 @@ img {
 
 header {
     nav {
+        font-size: 13px;
+        font-weight: 600;
+        .logo {
+            height: 60px;
+            aspect-ratio: 1/1;
+        }
         ul {
             li {
                 a {
@@ -97,12 +114,12 @@ main {
 /* FOOTER */
 
 #site_footer {
+    font-size: 13px;
+    color: $dc-text-grey;
     h3 {
         font-size: 20px;
     }
     p {
-        font-size: 14px;
-        color: $dc-text-grey;
         a {
             text-decoration-line: none;
         }

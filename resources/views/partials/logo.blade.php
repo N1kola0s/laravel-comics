@@ -1,1 +1,3 @@
-<img height='60' src="{{asset('img/dc-logo.png')}}" alt="">
+<div class="logo">
+<img src="{{asset('img/dc-logo.png')}}" alt="">
+</div>
