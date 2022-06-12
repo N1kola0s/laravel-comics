@@ -116,6 +116,9 @@ header {
                 i {
                     color: $dc-banner-bg;
                 }
+                &:focus {
+                    box-shadow: none!important;
+                }
             }
         }
     }

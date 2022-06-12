@@ -65,7 +65,7 @@
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
                     <input class="form-control pe-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btn my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
 
