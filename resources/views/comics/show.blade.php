@@ -108,21 +108,34 @@
             <div class="col">
 
                 <div class="talent">
-                    <h3>Talent</h3>
+                    <h3 class="comic_details_title">
+                        Talent
+                    </h3>
+                    <!-- /.comic_details_title -->
 
                     <div class="artist row">
 
                         <div class="col-4">
 
-                            <div class="h5">Art by:</div>
+                            <h5 class="title_talent">
+                                Art by:
+                            </h5>
+                            <!-- /.title_talent -->
 
                         </div>
 
                         <div class="col-8">
+
                             @forelse ($comic['artists'] as $artist)
-                            <span class="artist_list">{{$artist}}</span>
+
+                            <span class="artist_list">
+                                {{$artist}}
+                            </span>
+                            <!-- /.artist_list -->
+                            
                             @empty
                             <p>Non ci sono artisti</p>
+
                             @endforelse
 
                         </div>
@@ -134,16 +147,26 @@
                     <div class="writer row">
                         <div class="col-4">
 
-                            <div class="h5">Written by:</div>
+                            <h5 class="title_talent">
+                                Written by:
+                            </h5>
+                            <!-- /.title_talent -->
 
                         </div>
                         <!-- /.col -->
 
                         <div class="col-8">
+
                             @forelse ($comic['writers'] as $writer)
-                            <span class="writer_list">{{$writer}}</span>
+
+                            <span class="writer_list">
+                                {{$writer}}
+                            </span>
+                            <!-- /.writer_list -->
+
                             @empty
                             <p>Non risultano scrittori</p>
+
                             @endforelse
 
                         </div>
@@ -161,7 +184,72 @@
             <div class="col">
 
                 <div class="specs">
-                    <h3>Specs</h3>
+                    <h3 class="comic_details_title">Specs</h3>
+
+                    <div class="series row">
+                        <div class="col-4">
+
+                            <h5 class="title_specs">
+                                Series:
+                            </h5>
+
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-8">
+
+                           
+                            <span class="content_specs">
+                                {{$comic['series']}}
+                            </span>
+                            
+
+
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <!-- /.series -->
+
+                    <div class="us_price row">
+                        <div class="col-4">
+                            <h5 class="title_specs">
+                                U.S. Price:
+                            </h5>
+
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-8">
+                            <span class="content_specs">
+                                {{$comic['price']}}
+                            </span>
+                            
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.us_price -->
+
+                    <div class="on_sale_date row">
+
+                        <div class="col-4">
+                            <h5 class="title_specs">
+                                On Sale Date:
+                            </h5>
+                            
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-8">
+
+                            <span class="content_specs">
+                                {{$comic['sale_date']}}
+                            </span>
+                            
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <!-- /.on_sale_date -->
 
                 </div>
                 <!-- /.specs -->
