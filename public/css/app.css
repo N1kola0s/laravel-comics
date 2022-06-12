@@ -20595,6 +20595,9 @@ header nav form button i {
 header nav form button:focus {
   box-shadow: none !important;
 }
+header nav .nav-link {
+  padding: 2.5rem 1rem;
+}
 header .logo {
   height: 60px;
   aspect-ratio: 1/1;

@@ -12,7 +12,7 @@
     
 
    
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light p-0">
 
         <div class="container">
 
