@@ -12,6 +12,7 @@
 $dc-primary: #0282F9;
 $dc-banner-bg: #1C1C1C;
 $dc-footer-bg: #303030;
+$dc-comic-details-bg: #F6F6F6;
 $dc-text-dark: #464646;
 $dc-text-white: #FFFFF2;
 $dc-text-grey: #797777;
@@ -32,6 +33,43 @@ img {
 .container_sm {
     width: 1000px;
     margin: auto;
+}
+
+
+/* spacing class */
+
+.py_4 {
+    padding: 4rem 0;
+}
+
+.pb_4 {
+    padding-bottom: 4rem;
+}
+
+
+/* border */
+
+.bt_black {
+    border-top: 0.2px solid black;
+}
+
+.bb_black {
+    border-bottom: 0.2px solid black;
+}
+
+.bt_grey {
+    border-top: 0.2px solid lightgrey;
+}
+
+.bb_grey {
+    border-bottom: 0.2px solid lightgrey;
+}
+
+
+/* bg */
+
+.bg_gray {
+    background-color: $dc-comic-details-bg;
 }
 
 

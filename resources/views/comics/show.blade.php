@@ -34,22 +34,22 @@
 </div>
 <!-- /.hero -->
 
-<div class="comic_info">
+<div class="comic_info ">
 
     <div class="container_sm">
-        <div class="row">
+        <div class="row py_4">
             <div class="col-8">
 
                 <h1 class="comic_title text-left text-uppercase">
                     {{$comic['title']}}
                 </h1>
 
-                <div class="sale_box d-flex align-items-center justify-content-between">
+                <div class="sale_box d-flex align-items-center justify-content-between my-4 py-4 bt_black bb_black">
 
-                    <div class="sale_info d-flex justify-content-between align-items-center w-75">
+                    <div class="sale_info d-flex justify-content-between align-items-center w-75 p-4">
 
                         <div class="price">
-                            U.S. Price: {{$comic['price']}}
+                            <span>U.S. Price: </span> <span class="text-white">{{$comic['price']}}</span> 
                         </div>
                         <!-- /.price -->
 
@@ -61,8 +61,8 @@
                     </div>
                     <!-- /.sale_info -->
 
-                    <div class="check d-flex justify-content-center align-items-center  w-25"> 
-                        <a href="#"> Check Availability <i class="fa-solid fa-caret-down text-primary"></i> </a>
+                    <div class="check d-flex justify-content-center align-items-center  w-25 text-white"> 
+                        <a href="#" class="text-white text-decoration-none w-100"> Check Availability <i class="fa-solid fa-caret-down text-primary text-white px-1"></i> </a>
                     </div>
                     <!-- /.check -->
 
@@ -79,7 +79,11 @@
 
             <div class="col-4">
 
-                <div class="text-uppercase">advertisement</div>
+                <div class="text-uppercase d-flex justify-content-end">
+                    <div class="text-adv">
+                        advertisement
+                    </div> 
+                </div>
 
                 <div class="img_adv">
                     <img src="{{asset('img/adv.jpg')}}" alt="adv">
@@ -99,7 +103,7 @@
 </div>
 <!-- /comic_info -->
 
-<div class="comic_details">
+<div class="comic_details bg_gray pb_4 pt-4">
 
     <div class="container_sm">
 
@@ -108,12 +112,12 @@
             <div class="col">
 
                 <div class="talent">
-                    <h3 class="comic_details_title">
+                    <h3 class="comic_details_title pb-4">
                         Talent
                     </h3>
                     <!-- /.comic_details_title -->
 
-                    <div class="artist row">
+                    <div class="artist row py-2 bt_grey bb_grey ">
 
                         <div class="col-4">
 
@@ -132,7 +136,7 @@
                                 {{$artist}}
                             </span>
                             <!-- /.artist_list -->
-                            
+
                             @empty
                             <p>Non ci sono artisti</p>
 
@@ -144,7 +148,7 @@
                     </div>
                     <!-- /.artist -->
 
-                    <div class="writer row">
+                    <div class="writer row py-2 bb_grey">
                         <div class="col-4">
 
                             <h5 class="title_talent">
@@ -184,9 +188,9 @@
             <div class="col">
 
                 <div class="specs">
-                    <h3 class="comic_details_title">Specs</h3>
+                    <h3 class="comic_details_title pb-4">Specs</h3>
 
-                    <div class="series row">
+                    <div class="series row row py-2 bb_grey bt_grey">
                         <div class="col-4">
 
                             <h5 class="title_specs">
@@ -211,7 +215,7 @@
                     </div>
                     <!-- /.series -->
 
-                    <div class="us_price row">
+                    <div class="us_price row row py-2 bb_grey">
                         <div class="col-4">
                             <h5 class="title_specs">
                                 U.S. Price:
@@ -229,7 +233,7 @@
                     </div>
                     <!-- /.us_price -->
 
-                    <div class="on_sale_date row">
+                    <div class="on_sale_date row row py-2 bb_grey">
 
                         <div class="col-4">
                             <h5 class="title_specs">

@@ -20522,6 +20522,37 @@ img {
   margin: auto;
 }
 
+/* spacing class */
+.py_4 {
+  padding: 4rem 0;
+}
+
+.pb_4 {
+  padding-bottom: 4rem;
+}
+
+/* border */
+.bt_black {
+  border-top: 0.2px solid black;
+}
+
+.bb_black {
+  border-bottom: 0.2px solid black;
+}
+
+.bt_grey {
+  border-top: 0.2px solid lightgrey;
+}
+
+.bb_grey {
+  border-bottom: 0.2px solid lightgrey;
+}
+
+/* bg */
+.bg_gray {
+  background-color: #F6F6F6;
+}
+
 /* HEADER */
 header .banner_top {
   height: 20px;
