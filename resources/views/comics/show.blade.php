@@ -49,11 +49,11 @@
                     <div class="sale_info d-flex justify-content-between align-items-center w-75 p-4">
 
                         <div class="price">
-                            <span>U.S. Price: </span> <span class="text-white">{{$comic['price']}}</span> 
+                            <span class="title_info">U.S. Price: </span> <span class="text-white">{{$comic['price']}}</span> 
                         </div>
                         <!-- /.price -->
 
-                        <div class="availability text-uppercase">
+                        <div class="availability text-uppercase title_info">
                             available
                         </div>
                         <!-- /.availability -->
@@ -107,7 +107,7 @@
 
     <div class="container_sm">
 
-        <div class="row row-cols-2">
+        <div class="row row-cols-2 g-5">
 
             <div class="col">
 
@@ -132,8 +132,8 @@
 
                             @forelse ($comic['artists'] as $artist)
 
-                            <span class="artist_list">
-                                {{$artist}}
+                            <span class="artist_list px-1">
+                                <a href="#" class="text-decoration-none">{{$artist}}</a>
                             </span>
                             <!-- /.artist_list -->
 
@@ -163,8 +163,8 @@
 
                             @forelse ($comic['writers'] as $writer)
 
-                            <span class="writer_list">
-                                {{$writer}}
+                            <span class="writer_list px-1">
+                                <a href="#"class=" text-decoration-none">{{$writer}}</a>
                             </span>
                             <!-- /.writer_list -->
 
@@ -204,7 +204,7 @@
 
                            
                             <span class="content_specs">
-                                {{$comic['series']}}
+                                <a href="#" class="text-decoration-none text-uppercase">{{$comic['series']}}</a>
                             </span>
                             
 
@@ -246,7 +246,7 @@
                         <div class="col-8">
 
                             <span class="content_specs">
-                                {{$comic['sale_date']}}
+                                a{{$comic['sale_date']}}
                             </span>
                             
                         </div>

@@ -8,7 +8,9 @@
 /* Google font arial */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-//colors
+
+/* colors */
+
 $dc-primary: #0282F9;
 $dc-banner-bg: #1C1C1C;
 $dc-footer-bg: #303030;
@@ -16,6 +18,11 @@ $dc-comic-details-bg: #F6F6F6;
 $dc-text-dark: #464646;
 $dc-text-white: #FFFFF2;
 $dc-text-grey: #797777;
+$dc-text-title-details: #003F6F;
+$dc-text-title-info:#B9FC98;
+
+/* general rules */
+
 * {
     margin: 0;
     padding: 0;
@@ -218,12 +225,36 @@ main {
 }
 
 .comic_info {
+    .comic_title {
+        font-size: 24px;
+        font-weight: 600;
+    }
     .img_adv {
         height: 203px;
     }
     .sale_box {
         background-color: #55BA59;
         height: 36px;
+        font-size: 13px;
+        .title_info {
+            color: $dc-text-title-info;
+        }
+    }
+    .description {
+        color: $dc-text-dark;
+    }
+}
+
+.comic_details {
+    font-size: 14px;
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $dc-text-title-details;
+    }
+    h5 {
+        color: $dc-text-title-details;
+        font-size: 14px;
     }
 }
 

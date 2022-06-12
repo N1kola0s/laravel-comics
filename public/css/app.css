@@ -20505,6 +20505,8 @@ readers do not read off random characters that represent icons */
 }
 
 /* Google font arial */
+/* colors */
+/* general rules */
 * {
   margin: 0;
   padding: 0;
@@ -20682,12 +20684,36 @@ main .content_bottom .action_image {
   bottom: -45px;
 }
 
+.comic_info .comic_title {
+  font-size: 24px;
+  font-weight: 600;
+}
 .comic_info .img_adv {
   height: 203px;
 }
 .comic_info .sale_box {
   background-color: #55BA59;
   height: 36px;
+  font-size: 13px;
+}
+.comic_info .sale_box .title_info {
+  color: #B9FC98;
+}
+.comic_info .description {
+  color: #464646;
+}
+
+.comic_details {
+  font-size: 14px;
+}
+.comic_details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003F6F;
+}
+.comic_details h5 {
+  color: #003F6F;
+  font-size: 14px;
 }
 
 /* FOOTER */
