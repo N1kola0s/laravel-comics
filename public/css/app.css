@@ -20744,6 +20744,11 @@ main .content_bottom .action_image {
   text-decoration: none;
   color: #797777;
 }
+#site_footer .footer_top .container {
+  background-image: url(../img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
 #site_footer .footer_bottom {
   height: 87px;
   background-color: #303030;
