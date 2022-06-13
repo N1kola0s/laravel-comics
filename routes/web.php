@@ -20,22 +20,7 @@ Route::get('/', function () {
     return view('comics.index', compact('comics'));
 })->name('home');
 
-Route::get('/{id}', function($id){
-    
-    $comics = config('comics');
-    /* dd(count($comics));
-    dd($id); */
-    if($id >= 0 && is_numeric ($id) && $id < count($comics)) {
-        /* dd($id); */
-        /* dd($comics[$id]); */
-        $comic = $comics[$id];
-        return view('comics.show', compact('comic'));
-    } else {
-        /* dd('Abort! 404'); */
-        abort(404);
-    }
 
-}) -> name ('comics.show');
 
 Route::get('/characters', function () {
     $name = Route::currentRouteName();
@@ -106,3 +91,21 @@ Route::get('/shop', function () {
     
     return 'shop';
 })->name('shop');
+
+
+Route::get('/{id}', function($id){
+    
+    $comics = config('comics');
+    /* dd(count($comics));
+    dd($id); */
+    if($id >= 0 && is_numeric ($id) && $id < count($comics)) {
+        /* dd($id); */
+        /* dd($comics[$id]); */
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        /* dd('Abort! 404'); */
+        abort(404);
+    }
+
+}) -> name ('comics.show');
