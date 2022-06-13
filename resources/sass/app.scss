@@ -94,6 +94,7 @@ header {
     nav {
         font-size: 13px;
         font-weight: 600;
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
         form {
             border-bottom: 3px solid $dc-primary;
             width: 150px;
@@ -187,6 +188,7 @@ main {
                     aspect-ratio: 1/1;
                     height: 200px;
                     object-fit: cover;
+                    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
                 }
                 .card-body {
                     color: $dc-text-white;
@@ -225,6 +227,7 @@ main {
                 height: 232px;
                 left: 0;
                 bottom: -45px;
+                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
             }
         }
     }

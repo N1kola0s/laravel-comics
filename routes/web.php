@@ -48,61 +48,61 @@ Route::get('/comics', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('comics');
+    return 'comics';
 })->name('comics');
 
 Route::get('/movies', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('movies');
+    return 'movies';
 })->name('movies');
 
 Route::get('/tv', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('tv');
+    return 'tv';
 })->name('tv');
 
 Route::get('/games', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('games');
+    return 'games';
 })->name('games');
 
 Route::get('/collectibles', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('collectibles');
+    return 'collectibles';
 })->name('collectibles');
 
 Route::get('/videos', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('videos');
+    return 'videos';
 })->name('videos');
 
 Route::get('/fans', function () {
     
     $name = Route::currentRouteName();
     /* dd($name); */
-    return ('fans');
+    return 'fans';
 })->name('fans');
 
 Route::get('/news', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('news');
+    return 'news';
 })->name('news');
 
 Route::get('/shop', function () {
     $name = Route::currentRouteName();
     /* dd($name); */
     
-    return ('shop');
+    return 'shop';
 })->name('shop');

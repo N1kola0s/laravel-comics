@@ -20567,6 +20567,7 @@ header .banner_top sup {
 header nav {
   font-size: 13px;
   font-weight: 600;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 header nav form {
   border-bottom: 3px solid #0282F9;
@@ -20655,6 +20656,7 @@ main .content_top .container .card .card-img-top {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 main .content_top .container .card .card-body {
   color: #FFFFF2;
@@ -20688,6 +20690,7 @@ main .content_bottom .action_image {
   height: 232px;
   left: 0;
   bottom: -45px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .comic_info .comic_title {
